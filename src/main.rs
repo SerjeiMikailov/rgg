@@ -10,7 +10,6 @@ fn main() {
     let mut plays: i8 = 0;
     let mut numstring = String::new();
 
-    
 
     loop {
     println!("Digite um número entre 1 e 20:\n");
