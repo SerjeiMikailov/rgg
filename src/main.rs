@@ -1,9 +1,11 @@
 use std::io;
+use rand::Rng;
 
 fn main() {
     println!("Bem-vindo!");
 
-    let secretnumber: i8 = 14;
+    let mut random = rand::thread_rng();
+    let secretnumber: i8 = random.gen_range(0..=19) + 1;
     let tries: i8 = 5;
     let mut plays: i8 = 0;
     let mut numstring = String::new();
