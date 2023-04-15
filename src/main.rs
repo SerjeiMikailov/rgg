@@ -5,13 +5,13 @@ fn main() {
     println!("Bem-vindo!");
 
     let mut random = rand::thread_rng();
-    let secretnumber: i8 = random.gen_range(0..=19) + 1;
+    let secretnumber: i8 = random.gen_range(0..=20);
     let tries: i8 = 5;
     let mut plays: i8 = 0;
     let mut numstring = String::new();
 
     let mut randomic_points = rand::thread_rng();
-    let random_reducer: i16 = randomic_points.gen_range(5..=15);
+    let random_reducer: i16 = randomic_points.gen_range(5..=12);
     let mut points: i16 = 100;
 
     loop {
